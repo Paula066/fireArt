@@ -1,0 +1,254 @@
+@import "./src/style/mixin";
+@import "./src/style/Atoms/decoration";
+
+.rating {
+  background-color: #4651c0;
+  height: 100vh;
+
+  @include s {
+    margin: 8px;
+    border-radius: 20px;
+    position: relative;
+    height: calc(100vh - 16px);
+  }
+
+  &__wrapper {
+    max-width: 700px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  &__scoredBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 28px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+    @include s {
+      margin-bottom: 15px;
+    }
+
+    img {
+      background-color: white;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      margin-right: 20px;
+
+      @include s {
+        width: 32px;
+        height: 32px;
+        margin-right: 15px;
+      }
+    }
+
+    span {
+      color: #FF7C7C;
+      margin-left: 10px;
+      @include s{
+        font-size: 20px;
+      }
+    }
+
+    p {
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 23px;
+      text-align: center;
+      color: #FFFFFF;
+
+      @include s {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .decoration {
+
+    &--1  {
+      @include s {
+        background-image: url("../../assets/mobile/ratingElement1.svg");
+        top: 0;
+        right: 0;
+      }
+    }
+
+    &--2 {
+      @include s {
+        top: 93%;
+      }
+    }
+
+    &--3 {
+      @include s {
+        top: 40%;
+        width: 102px;
+        height: 260px;
+        background-image: url("../../assets/mobile/ratingElement3.svg");
+      }
+    }
+
+    &--4 {
+      @include s {
+        top: 65%;
+        width: 80px;
+        height: 231px;
+        display: block;
+        right: 0;
+        left: initial;
+        background-image: url("../../assets/mobile/ratingElement4.svg");
+      }
+    }
+
+    &--5 {
+      display: none;
+      @include s {
+        width: 101px;
+        height: 472px;
+        top: 20%;
+        display: block;
+        right: 0;
+        background-image: url("../../assets/mobile/ratingElement5.svg");
+      }
+    }
+
+    &--6 {
+      display: none;
+      @include s {
+        width: 82px;
+        height: 231px;
+        top: 20%;
+        display: block;
+        left: 0;
+        background-image: url("../../assets/mobile/ratingElement6.svg");
+      }
+    }
+  }
+
+  &__stars {
+    margin-bottom: 58px;
+    text-align: center;
+
+    @include s {
+      margin-bottom: 19px;
+    }
+
+    img {
+      @include s {
+        width: 22px;
+        height: 22px;
+      }
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+
+  &__box {
+    border-radius: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 149%;
+    color: #464FAC;
+    padding: 15px 31px;
+    width: 620px;
+
+    @include s {
+      width: 100%;
+    }
+
+    p {
+      max-width: 90%;
+      margin: 0;
+      color: rgba(70, 79, 172, 0.7);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+
+      @include s {
+        margin-bottom: 13px;
+      }
+    }
+
+    &--correctAnswer,
+    &--incorrectAnswer {
+
+      @include s {
+        font-size: 12px;
+      }
+      &:before {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        @include defaultBackgroundImgStyle;
+      }
+    }
+
+    &--correctAnswer {
+      background: #FFFBFA;
+      position: relative;
+
+      &:before {
+        background-image: url("../../assets/svg/correctAnswer.svg");
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    &--incorrectAnswer {
+      background: #FFDBDB;
+      position: relative;
+
+      &:before {
+        background-image: url("../../assets/svg/inCorrectAnswer.svg");
+        width: 15px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__cancelIcon {
+    position: absolute;
+    background-image: url("../../assets/svg/cancel-icon.svg");
+    @include defaultBackgroundImgStyle;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+
+    @include s {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 0px;
+    }
+  }
+
+  &__button {
+    margin-top: 60px;
+    width: 446px;
+    background: linear-gradient(90deg, #FFA67A 0%, #FF6065 100%);
+    box-shadow: 0px 6px 0px 0px #C65252;
+    z-index: 2;
+
+    @include s {
+      width: 100%;
+      margin-top: 26px;
+      padding: 19px 0;
+      box-shadow: 0px 3px 0px 0px #c65252;
+    }
+  }
+}

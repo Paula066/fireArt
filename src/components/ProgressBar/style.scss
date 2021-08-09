@@ -1,0 +1,33 @@
+@import "./src/style/mixin";
+
+.progressBar {
+  height: 5px;
+  width: 100%;
+  background: #DBDEFF;
+  border-radius: 20px;
+  margin: 50px;
+  position: relative;
+
+  @include s {
+    margin: 30px;
+  }
+
+  &__fill {
+    border-radius: inherit;
+    text-align: right;
+    height: 5px;
+  }
+
+  &__label {
+    font-weight: bold;
+    color: #4953BE;
+    position: absolute;
+    top: -34px;
+    left: 0;
+
+    span {
+      color: #FF7878;
+    }
+
+  }
+}

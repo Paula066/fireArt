@@ -1,0 +1,28 @@
+@mixin xs {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin s {
+  @media (max-width: 750px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1320px) {
+    @content;
+  }
+}
+
+@mixin full {
+  @media (min-width: 1320px) {
+    @content;
+  }
+}
+
+@mixin defaultBackgroundImgStyle(){
+  background-repeat: no-repeat;
+  background-size: contain;
+}

@@ -1,0 +1,99 @@
+.decorationBox {
+
+  @include s {
+    pointer-events: none;
+    height: calc(100vh - 16px);
+    position: absolute;
+    border-radius: 20px;
+    width: calc(100vw - 16px);
+    overflow: hidden;
+  }
+
+
+  .decoration {
+    @include defaultBackgroundImgStyle;
+    position: fixed;
+
+    @include s {
+      position: absolute;
+    }
+
+
+    &--1 {
+      top: 85px;
+      background-image: url("../../assets/svg/triviaElement1.svg");
+      width: 129px;
+      height: 444px;
+
+      @include s {
+        background-image: url("../../assets/mobile/entertainmentElement5.svg");
+        width: 33px;
+        height: 147px;
+        top: 5%;
+      }
+    }
+
+    &--1,
+    &--2 {
+      right: 0;
+    }
+
+    &--2 {
+      top: 500px;
+      width: 111px;
+      height: 568px;
+      background-image: url("../../assets/svg/triviaElement2.svg");
+
+      @include s {
+        background-image: url("../../assets/mobile/triviaElement4.svg");
+        width: 41px;
+        height: 328px;
+        transform: rotateX(180deg) rotateY(180deg);
+        top: 70%;
+      }
+
+    }
+
+    &--3,
+    &--4 {
+      left: 0;
+    }
+
+    &--3 {
+      bottom: 0;
+      width: 285px;
+      height: 272px;
+      background-image: url("../../assets/svg/triviaElement3.svg");
+
+      @include s{
+        width: 283px;
+        height: 100px;
+      }
+    }
+
+    &--4 {
+      left: 0;
+      top: -90px;
+      width: 176px;
+      height: 771px;
+      background-image: url("../../assets/svg/triviaElement4.svg");
+
+      @include s {
+        display: none;
+      }
+    }
+
+    //&--5 {
+    //  display: none;
+    //  @include s {
+    //    display: block;
+    //    background-image: url("../../assets/svg/triviaElement2.svg");
+    //    top: -15%;
+    //    left: -12px;
+    //    width: 41px;
+    //    height: 328px;
+    //    transform: rotateY(180deg) rotateX(180deg);
+    //  }
+    //}
+  }
+}

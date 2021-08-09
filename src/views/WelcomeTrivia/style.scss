@@ -1,0 +1,194 @@
+@import "./src/style/mixin";
+@import "./src/style/Atoms/decoration";
+
+.welcomeTrivia {
+  background-color: #4651c0;
+  height: 100vh;
+
+  @include s {
+    margin: 8px;
+    border-radius: 20px;
+    position: relative;
+    height: calc(100vh - 16px);
+  }
+
+  &__wrapper {
+    max-width: 446px;
+
+    @include s {
+      max-width: 350px;
+    }
+
+    @include xs {
+      max-width: 287px;
+    }
+  }
+
+  //.decoration {
+  //  .decoration {
+  //    &--5 {
+  //      display: none;
+  //      @include s {
+  //        display: block;
+  //        background-image: url("../../assets/svg/triviaElement2.svg");
+  //        top: 50%;
+  //        left: 0px;
+  //        width: 41px;
+  //        height: 328px;
+  //        transform: rotateX(180deg) rotateY(180deg);
+  //      }
+  //    }
+  //  }
+  //}
+
+
+  &__header {
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 57px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 0;
+
+    @include s {
+      font-size: 26px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @include s {
+      margin-top: 30px;
+    }
+
+    span {
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 151.9%;
+      color: #F7A491;
+
+      @include s {
+        font-size: 13px;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 37px;
+      }
+    }
+  }
+
+  &__select {
+    position: relative;
+    &:after {
+      content: '';
+      @include defaultBackgroundImgStyle;
+      background-image: url("../../assets/svg/arrow-down.svg");
+      display: block;
+      width: 22px;
+      height: 15px;
+      position: absolute;
+    }
+
+    @include s {
+      font-size: 13px;
+      padding: 15px 12px;
+      margin-top: 10px;
+    }
+  }
+
+  &__button {
+    background: linear-gradient(90deg, #FFA67A 0%, #FF6065 100%);
+    box-shadow: 0px 6px 0px 0px #C65252;
+    z-index: 2;
+
+
+    @include s {
+      font-size: 15px;
+      padding: 19px 12px;
+    }
+  }
+
+  &__amount {
+    margin-bottom: 110px;
+
+    &--wrongValidation {
+      border: 2px solid #FFA67A;
+    }
+
+    @include s {
+      font-size: 16px;
+      padding: 15px 12px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__difficulty {
+    width: 100%;
+    position: relative;
+
+    &:before {
+      content: '';
+      @include defaultBackgroundImgStyle;
+      background-image: url("../../assets/svg/arrow-down.svg");
+      color: #fff;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 22px;
+      height: 15px;
+      pointer-events: none;
+
+      @include s {
+        width: 20px;
+        height: 13px;
+        top: 45%;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    margin-top: 39px;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      width: 35px;
+      margin-right: 10px;
+    }
+
+    @include s {
+      margin-top: 24px;
+    }
+
+    &--difficulty {
+      &:before {
+        background-image: url("../../assets/svg/difficulty-icon.svg");
+        height: 37px;
+      }
+    }
+
+    &--amount {
+      &:before {
+        background-image: url("../../assets/svg/amount-icon.svg");
+        height: 35px;
+        margin-bottom: -2px;
+      }
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    z-index: 2;
+  }
+}

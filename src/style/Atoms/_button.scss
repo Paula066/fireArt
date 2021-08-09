@@ -1,0 +1,20 @@
+@import "./src/style/mixin";
+
+.buttonElement {
+  border-radius: 14px;
+  padding: 27px 0px;
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 150%;
+  text-align: center;
+  background-color: transparent;
+
+  @include s {
+    font-size: 15px;
+  }
+}

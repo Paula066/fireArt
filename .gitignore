@@ -3,6 +3,9 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+.DS_Store
+.idea/
+node_modules/
 
 # Other files and folders
 .settings/
