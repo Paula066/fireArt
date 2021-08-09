@@ -16,5 +16,4 @@ I decided to cut off logo in 2X PNG format, and then cut redundant spaces
 
 1. X sign - closed actual page and come back to Home page
 
-### `To co się nie udało`
 
