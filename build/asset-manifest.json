@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fireArt/static/css/main.aa5409cf.chunk.css",
+    "main.js": "/fireArt/static/js/main.889dbdfe.chunk.js",
+    "main.js.map": "/fireArt/static/js/main.889dbdfe.chunk.js.map",
+    "runtime-main.js": "/fireArt/static/js/runtime-main.7862ab59.js",
+    "runtime-main.js.map": "/fireArt/static/js/runtime-main.7862ab59.js.map",
+    "static/js/2.c2c33a70.chunk.js": "/fireArt/static/js/2.c2c33a70.chunk.js",
+    "static/js/2.c2c33a70.chunk.js.map": "/fireArt/static/js/2.c2c33a70.chunk.js.map",
+    "static/js/3.66a2d74d.chunk.js": "/fireArt/static/js/3.66a2d74d.chunk.js",
+    "static/js/3.66a2d74d.chunk.js.map": "/fireArt/static/js/3.66a2d74d.chunk.js.map",
+    "index.html": "/fireArt/index.html",
+    "static/css/main.aa5409cf.chunk.css.map": "/fireArt/static/css/main.aa5409cf.chunk.css.map",
+    "static/js/2.c2c33a70.chunk.js.LICENSE.txt": "/fireArt/static/js/2.c2c33a70.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/fireArt/static/media/triviaElement4.e2d1e66e.svg",
+    "static/media/trivia-logo.b5aac9fc.png": "/fireArt/static/media/trivia-logo.b5aac9fc.png",
+    "static/media/user.2224bc3d.svg": "/fireArt/static/media/user.2224bc3d.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7862ab59.js",
+    "static/js/2.c2c33a70.chunk.js",
+    "static/css/main.aa5409cf.chunk.css",
+    "static/js/main.889dbdfe.chunk.js"
+  ]
+}
